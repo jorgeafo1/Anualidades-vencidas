@@ -71,7 +71,7 @@ VF=120000
 r=19/6000
 A=1000
 # Calculamos el valor final
-Numero de pagos=t(VF,A,r)
+NumeroDePagos=t(VF,A,r)
 # Imprimimmos el resultado: 
 NumeroDePagos
 ```
