@@ -54,3 +54,25 @@ Anualidad=A(VF,r,t)
 # Imprimimmos el resultado: 
 Anualidad
 ```
+
+### Calculo de el Número de pagos o plazo, conociendo valor futuro, anualidad y tasa del periodo
+
+Para ilustrar el ejemplo se tiene el siguiente ejercico:
+
+$VF$=120,000.00
+$r$=19/60% quincenal
+$A$=1000 quincenales
+
+Se realizan los calculos:
+
+```{r}
+# Creamos objetos con los valores de entrada:
+VF=120000
+r=19/6000
+A=1000
+# Calculamos el valor final
+Numero de pagos=t(VF,A,r)
+# Imprimimmos el resultado: 
+NumeroDePagos
+```
+
