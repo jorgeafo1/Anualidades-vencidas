@@ -29,7 +29,7 @@ A=900
 r=1/240
 t=84
 # Calculamos el valor final
-ValorFinal=VF(A,r,t)
+ValorFuturo=VF(A,r,t)
 # Imprimimmos el resultado: 
-Anualidad
+ValorFuturo
 ```
