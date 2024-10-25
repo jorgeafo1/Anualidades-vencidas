@@ -166,17 +166,17 @@ numeroDePagos
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$VA$=
-$A$=
-$t$=
+$VA$=4,000.00
+$A$=100.00
+$t$=36 meses
 
 Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
-VA=
-A=
-t=
+VA=4000
+A=100
+t=36
 # Calculamos el número de pagos
 tasa=r(VA,A,t)
 # Imprimimmos el resultado: 
