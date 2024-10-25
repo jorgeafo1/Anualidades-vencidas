@@ -59,17 +59,17 @@ Anualidad
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$VF$=
-$A$=
-$r$=
+$VF$=20,000.00
+$A$=244.89
+$r$=1.00% mensual
 
 Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
-VF=120000
-A=
-r=
+VF=20000
+A=244.89
+r=0.01
 # Calculamos el numero de pagos
 NumeroDePagos=t(VF,A,r)
 # Imprimimmos el resultado: 
