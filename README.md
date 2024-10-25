@@ -18,7 +18,7 @@ A continuacion se dan ejemplos del uso de las formulas correspondientes:
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
 $A$=900.00
-$r$=5/12% anual
+$r$=5/12% mensual
 $t$=84 meses
 
 Se realizan los calculos:
@@ -32,4 +32,25 @@ t=84
 ValorFuturo=VF(A,r,t)
 # Imprimimmos el resultado: 
 ValorFuturo
+```
+
+### Calculo de la anualidad , conociendo valor futuro, tasa del periodo y número de pagos
+
+Para ilustrar el ejemplo se tiene el siguiente ejercico:
+
+$VF$=80,000.00
+$r$=0.25% quincenal
+$t$=120 quincenas
+
+Se realizan los calculos:
+
+```{r}
+# Creamos objetos con los valores de entrada:
+VF=80000
+r=1/400
+t=120
+# Calculamos el valor final
+Anualidad=A(VF,r,t)
+# Imprimimmos el resultado: 
+Anualidad
 ```
