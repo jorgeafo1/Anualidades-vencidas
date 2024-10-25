@@ -83,7 +83,7 @@ Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
 $VF$=20,000.00
 $A$=244.89
-$t$=60
+$t$=60 meses
 
 Se realizan los calculos:
 
@@ -103,17 +103,17 @@ tasa
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$A$=
-$r$=
-$t$=
+$A$=244.89
+$r$=1% mensual
+$t$=60 meses
 
 Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
-A=
-r=
-t=
+A=244.89
+r=0.01
+t=60
 # Calculamos la tasa del periodo
 tasa=r(A,r,t)
 # Imprimimmos el resultado: 
