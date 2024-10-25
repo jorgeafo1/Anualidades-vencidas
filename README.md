@@ -115,9 +115,9 @@ A=244.89
 r=0.01
 t=60
 # Calculamos la tasa del periodo
-tasa=r(A,r,t)
+ValorActual=VA(A,r,t)
 # Imprimimmos el resultado: 
-tasa
+ValorActual
 ```
 
 ### 6. Calculo de la anualidad, conociendo valor actual, tasa del periodo y número de pagos
