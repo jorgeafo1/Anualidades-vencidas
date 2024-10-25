@@ -38,17 +38,17 @@ ValorFuturo
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$VF$=80,000.00
-$r$=0.25% quincenal
-$t$=120 quincenas
+$VF$=20,000.00
+$r$=1.00% mensual
+$t$=60 meses
 
 Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
-VF=80000
-r=0.025
-t=120
+VF=20000
+r=0.01
+t=60
 # Calculamos la anualidad
 Anualidad=A(VF,r,t)
 # Imprimimmos el resultado: 
