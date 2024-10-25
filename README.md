@@ -98,6 +98,28 @@ tasa=r(VF,t,A)
 tasa
 ```
 
+### Calculo del valor actual, conociendo la anualidad, tasa de interés del periodo y el número (plazo) de anualidades
+
+
+Para ilustrar el ejemplo se tiene el siguiente ejercico:
+
+$VF$=120,000.00
+$t$=19/60% quincenal
+$A$=1000 quincenales
+
+Se realizan los calculos:
+
+```{r}
+# Creamos objetos con los valores de entrada:
+VF=
+t=
+A=
+# Calculamos la tasa del periodo
+tasa=r(VF,t,A)
+# Imprimimmos el resultado: 
+tasa
+```
+
 ### Calculo de la anualidad, conociendo valor actual, tasa del periodo y número de pagos
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
