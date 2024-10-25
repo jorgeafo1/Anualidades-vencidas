@@ -98,13 +98,13 @@ tasa=r(VF,t,A)
 tasa
 ```
 
-### Calculo de la la anualidad, conociendo valor actual, tasa del periodo y número de pagos
+### Calculo de la anualidad, conociendo valor actual, tasa del periodo y número de pagos
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$VF$=120,000.00
-$t$=19/60% quincenal
-$A$=1000 quincenales
+$VA$=10,00.00
+$r$=5/12% mensual
+$t$=60 meses
 
 Se realizan los calculos:
 
@@ -119,3 +119,23 @@ anualidad=A(VA,r,t)
 anualidad
 ```
 
+### Calculo de el número de pagos o plazo, conociendo valor futuro, anualidad y tasa del periodo
+
+Para ilustrar el ejemplo se tiene el siguiente ejercico:
+
+$VA$=80,000.00
+$A$=1,000.00
+$r$=5/24
+
+Se realizan los calculos:
+
+```{r}
+# Creamos objetos con los valores de entrada:
+VA=10000
+t=60
+r=1/240
+# Calculamos el número de pagos
+numeroDePagos=t(VF,a,r)
+# Imprimimmos el resultado: 
+numeroDePagos
+```
