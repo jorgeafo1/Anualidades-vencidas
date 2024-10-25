@@ -48,7 +48,7 @@ Se realizan los calculos:
 # Creamos objetos con los valores de entrada:
 VF=80000
 r=1/400
-t=120
+t=144
 # Calculamos el valor final
 Anualidad=A(VF,r,t)
 # Imprimimmos el resultado: 
