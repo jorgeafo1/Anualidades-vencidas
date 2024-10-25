@@ -13,7 +13,7 @@ source("https://raw.githubusercontent.com/jorgeafo1/Anualidades-vencidas/refs/he
 
 A continuacion se dan ejemplos del uso de las formulas correspondientes:
 
-### Calculo del valor futuro
+### 1. Calculo del valor futuro
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
@@ -34,7 +34,7 @@ ValorFuturo=VF(A,r,t)
 ValorFuturo
 ```
 
-### Calculo de la anualidad , conociendo valor futuro, tasa del periodo y número de pagos
+### 2. Calculo de la anualidad , conociendo valor futuro, tasa del periodo y número de pagos
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
@@ -55,7 +55,7 @@ Anualidad=A(VF,r,t)
 Anualidad
 ```
 
-### Calculo de el Número de pagos o plazo, conociendo valor futuro, anualidad y tasa del periodo
+### 3. Calculo de el Número de pagos o plazo, conociendo valor futuro, anualidad y tasa del periodo
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
@@ -76,7 +76,7 @@ NumeroDePagos=t(VF,A,r)
 NumeroDePagos
 ```
 
-### Calculo de la tasa del periodo, conociendo valor futuro, número de pagos y monto de la anualidad
+### 4. Calculo de la tasa del periodo, conociendo valor futuro, número de pagos y monto de la anualidad
 
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
@@ -98,7 +98,7 @@ tasa=r(VF,t,A)
 tasa
 ```
 
-### Calculo del valor actual, conociendo la anualidad, tasa de interés del periodo y el número (plazo) de anualidades
+### 5. Calculo del valor actual, conociendo la anualidad, tasa de interés del periodo y el número (plazo) de anualidades
 
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
@@ -120,7 +120,7 @@ tasa=r(VF,t,A)
 tasa
 ```
 
-### Calculo de la anualidad, conociendo valor actual, tasa del periodo y número de pagos
+### 6. Calculo de la anualidad, conociendo valor actual, tasa del periodo y número de pagos
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
@@ -141,7 +141,28 @@ anualidad=A(VA,r,t)
 anualidad
 ```
 
-### Calculo de el número de pagos o plazo, conociendo valor futuro, anualidad y tasa del periodo
+### 7. Calculo de el número de pagos o plazo, conociendo valor futuro, anualidad y tasa del periodo
+
+Para ilustrar el ejemplo se tiene el siguiente ejercico:
+
+$VA$=80,000.00
+$A$=1,000.00
+$r$=5/24
+
+Se realizan los calculos:
+
+```{r}
+# Creamos objetos con los valores de entrada:
+VA=10000
+t=60
+r=1/240
+# Calculamos el número de pagos
+numeroDePagos=t(VF,a,r)
+# Imprimimmos el resultado: 
+numeroDePagos
+```
+
+### 8. Calculo la tasa del periodo, conociendo valor actual, número de pagos y monto de la anualidad.
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
