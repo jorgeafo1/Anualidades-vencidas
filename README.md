@@ -81,17 +81,17 @@ NumeroDePagos
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$VF$=
-$A$=
-$t$=
+$VF$=20,000.00
+$A$=244.89
+$t$=60
 
 Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
-VF=
-A=
-t=
+VF=20000
+A=244.89
+t=60
 # Calculamos la tasa del periodo
 tasa=r(VF,A,t)
 # Imprimimmos el resultado: 
