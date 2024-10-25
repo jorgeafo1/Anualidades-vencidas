@@ -28,7 +28,7 @@ Se realizan los calculos:
 A=900
 r=1/240
 t=84
-# Calculamos el valor final
+# Calculamos el valor futuro
 ValorFuturo=VF(A,r,t)
 # Imprimimmos el resultado: 
 ValorFuturo
@@ -59,17 +59,17 @@ Anualidad
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$VF$=120,000.00
-$r$=19/60% quincenal
-$A$=1000 quincenales
+$VF$=
+$A$=
+$r$=
 
 Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
 VF=120000
-r=19/6000
-A=1000
+A=
+r=
 # Calculamos el numero de pagos
 NumeroDePagos=t(VF,A,r)
 # Imprimimmos el resultado: 
@@ -81,19 +81,19 @@ NumeroDePagos
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$VF$=120,000.00
-$t$=19/60% quincenal
-$A$=1000 quincenales
+$VF$=
+$A$=
+$t$=
 
 Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
 VF=
-t=
 A=
+t=
 # Calculamos la tasa del periodo
-tasa=r(VF,t,A)
+tasa=r(VF,A,t)
 # Imprimimmos el resultado: 
 tasa
 ```
@@ -103,19 +103,19 @@ tasa
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$VF$=120,000.00
-$t$=19/60% quincenal
-$A$=1000 quincenales
+$A$=
+$r$=
+$t$=
 
 Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
-VF=
-t=
 A=
+r=
+t=
 # Calculamos la tasa del periodo
-tasa=r(VF,t,A)
+tasa=r(A,r,t)
 # Imprimimmos el resultado: 
 tasa
 ```
@@ -124,40 +124,40 @@ tasa
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$VA$=10,00.00
-$r$=5/12% mensual
-$t$=60 meses
+$VA$=
+$r$=
+$t$=
 
 Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
-VA=10000
-t=60
-r=1/240
+VA=
+r=
+t=
 # Calculamos la anualidad
 anualidad=A(VA,r,t)
 # Imprimimmos el resultado: 
 anualidad
 ```
 
-### 7. Calculo de el número de pagos o plazo, conociendo valor futuro, anualidad y tasa del periodo
+### 7. Calculo de el número de pagos o plazo, conociendo valor actual, anualidad y tasa del periodo
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$VA$=80,000.00
-$A$=1,000.00
-$r$=5/24
+$VA$=
+$A$=
+$r$=
 
 Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
-VA=10000
-t=60
-r=1/240
+VA=
+A=
+r=
 # Calculamos el número de pagos
-numeroDePagos=t(VF,a,r)
+numeroDePagos=t(VA,A,r)
 # Imprimimmos el resultado: 
 numeroDePagos
 ```
@@ -166,19 +166,19 @@ numeroDePagos
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$VA$=80,000.00
-$A$=1,000.00
-$r$=5/24
+$VA$=
+$A$=
+$t$=
 
 Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
-VA=10000
-t=60
-r=1/240
+VA=
+A=
+t=
 # Calculamos el número de pagos
-numeroDePagos=t(VF,a,r)
+tasa=r(VA,A,t)
 # Imprimimmos el resultado: 
-numeroDePagos
+tasa
 ```
