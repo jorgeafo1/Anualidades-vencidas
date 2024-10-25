@@ -145,17 +145,17 @@ anualidad
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$VA$=
-$A$=
-$r$=
+$VA$=5,000.00
+$A$=100.00
+$r$=1.00% mensual
 
 Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
-VA=
-A=
-r=
+VA=5000
+A=100
+r=0.01
 # Calculamos el número de pagos
 numeroDePagos=t(VA,A,r)
 # Imprimimmos el resultado: 
