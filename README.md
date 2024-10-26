@@ -50,10 +50,7 @@ VF=20000
 r=0.01
 t=60
 # Calculamos la anualidad
-Anualidad = A = function(VF, r, t) {
-  exit = (VF * r) / ((1 + r)^t - 1)
-  return(exit)
-}
+Anualidad=A(VF, r, t) 
 # Imprimimmos el resultado: 
 Anualidad
 ```
