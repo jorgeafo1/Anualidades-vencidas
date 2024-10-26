@@ -178,7 +178,7 @@ VA=4000
 A=100
 t=36
 # Calculamos el número de pagos
-tasa=r(VA,A,t)
+tasa=r_VA(VA,A,t)
 # Imprimimos el resultado: 
 tasa
 ```
