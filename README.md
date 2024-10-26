@@ -174,9 +174,9 @@ Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
-VA=11009
-A=244.89
-t=60
+VA=10000
+A=300
+t=36
 # Calculamos el número de pagos
 tasa=r_VA(VA,A,t)
 # Imprimimos el resultado: 
