@@ -45,8 +45,14 @@ t_VA=function(VA, A, r){
 }
 
 # Fórmula para calcular la tasa del periodo (r), conociendo valor actual
-r_VA=function(VA, A, t) {
+r_VA = function(VA, A, t) {
+  if (VA <= 0 || A <= 0 || t <= 0) {
+    stop("VA, A y t deben ser mayores que cero.")
+  }
+  
+  ## Usar un límite inferior pequeño para evitar NA
   exit = uniroot(function(r) A * (((1 + r)^t - 1) / r) - VA, lower = 0.0001, upper = 1)$root
   return(exit)
 }
+
 
