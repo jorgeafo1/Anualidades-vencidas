@@ -11,8 +11,8 @@ VF=function(A, r, t){
 
 # Fórmula para calcular la anualidad , conociendo valor futuro, tasa del periodo y número de pagos
 
-A=function(VF, r, t){
-  exit= (VF * r) / ((1 + r)^t - 1)
+A = function(VF, r, t) {
+  exit = (VF * r) / ((1 + r)^t - 1)
   return(exit)
 }
 
