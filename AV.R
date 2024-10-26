@@ -26,7 +26,7 @@ r_VF = function(VF, A, t) {
     stop("VF, A y t deben ser mayores que cero.")
   }
 
-  # Usar un límite inferior pequeño y un límite superior más grande
+
   exit = uniroot(function(r) {
     if (r == 0) {
       return(t * A - VF)  # En el caso de r = 0, calcula la suma total de anualidades
@@ -63,12 +63,11 @@ r_VA = function(VA, A, t) {
     stop("VA, A y t deben ser mayores que cero.")
   }
   
-  # Usar un límite inferior pequeño y un límite superior más grande
   exit = uniroot(function(r) {
     if (r == 0) {
-      return(t * A - VA)  # En el caso de r = 0, se calcula la anualidad total
+      return(t * A - VA)  
     } else {
-      return(A * ((1 - (1 + r)^-t) / r) - VA)  # Fórmula para calcular VA
+      return(A * ((1 - (1 + r)^-t) / r) - VA)  
     }
   }, lower = 0.0001, upper = 1)$root
   
