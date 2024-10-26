@@ -166,9 +166,9 @@ numeroDePagos
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$VA$=11,009.00
-$A$=244.89
-$t$=60 meses
+$VA$=10,000.00
+$A$=300.00
+$t$=36 meses
 
 Se realizan los calculos:
 
