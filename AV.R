@@ -50,9 +50,18 @@ r_VA = function(VA, A, t) {
     stop("VA, A y t deben ser mayores que cero.")
   }
   
-  ## Usar un límite inferior pequeño para evitar NA
-  exit = uniroot(function(r) A * (((1 + r)^t - 1) / r) - VA, lower = 0.0001, upper = 1)$root
+  # Usar un límite inferior pequeño y un límite superior más grande
+  # para evitar NA en el cálculo
+  exit = uniroot(function(r) {
+    if (r == 0) {
+      return(A * t - VA)  # En el caso de r = 0, la anualidad es constante
+    } else {
+      return(A * (((1 + r)^t - 1) / r) - VA)
+    }
+  }, lower = 0.0001, upper = 1)$root
+  
   return(exit)
 }
+
 
 
