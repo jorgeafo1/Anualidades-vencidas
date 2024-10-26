@@ -51,17 +51,17 @@ r_VA = function(VA, A, t) {
   }
   
   # Usar un límite inferior pequeño y un límite superior más grande
-  # para evitar NA en el cálculo
   exit = uniroot(function(r) {
     if (r == 0) {
-      return(A * t - VA)  # En el caso de r = 0, la anualidad es constante
+      return(t * A - VA)  # En el caso de r = 0, se calcula la anualidad total
     } else {
-      return(A * (((1 + r)^t - 1) / r) - VA)
+      return(A * ((1 - (1 + r)^-t) / r) - VA)  # Fórmula para calcular VA
     }
   }, lower = 0.0001, upper = 1)$root
   
   return(exit)
 }
+
 
 
 
