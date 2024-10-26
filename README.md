@@ -174,7 +174,7 @@ Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
-VA=4000
+VA=5000
 A=100
 t=36
 # Calculamos el número de pagos
