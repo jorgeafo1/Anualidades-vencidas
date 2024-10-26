@@ -40,7 +40,7 @@ A_VA=function(VA, r, t){
 
 # Fórmula para calcular el número de pagos (t), conociendo valor actual
 t_VA=function(VA, A, r){
-  exit= log(1 - (VA * r) / A) / log(1 + r)
+  exit= -log(1 - (VA * r) / A) / log(1 + r)
   return(exit)
 }
 
