@@ -71,7 +71,7 @@ VF=20000
 A=244.89
 r=0.01
 # Calculamos el numero de pagos
-NumeroDePagos=t(VF,A,r)
+NumeroDePagos=t_VF(VF,A,r)
 # Imprimimos el resultado: 
 NumeroDePagos
 ```
@@ -93,7 +93,7 @@ VF=20000
 A=244.89
 t=60
 # Calculamos la tasa del periodo
-tasa=r(VF,A,t)
+tasa=r_VF(VF,A,t)
 # Imprimimos el resultado: 
 tasa
 ```
@@ -136,7 +136,7 @@ VA=10000
 r=0.01
 t=60
 # Calculamos la anualidad
-anualidad=A(VA,r,t)
+anualidad=A_VA(VA,r,t)
 # Imprimimos el resultado: 
 anualidad
 ```
@@ -157,7 +157,7 @@ VA=5000
 A=100
 r=0.01
 # Calculamos el número de pagos
-numeroDePagos=t(VA,A,r)
+numeroDePagos=t_VA(VA,A,r)
 # Imprimimos el resultado: 
 numeroDePagos
 ```
