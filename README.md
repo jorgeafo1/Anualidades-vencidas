@@ -17,17 +17,17 @@ A continuacion se dan ejemplos del uso de las formulas correspondientes:
 
 Para ilustrar el ejemplo se tiene el siguiente ejercico:
 
-$A$=900.00
-$r$=5/12% mensual
-$t$=84 meses
+$A$=244.89
+$r$=1% mensual
+$t$=60 meses
 
 Se realizan los calculos:
 
 ```{r}
 # Creamos objetos con los valores de entrada:
-A=900
-r=1/240
-t=84
+A=244.89
+r=0.01
+t=60
 # Calculamos el valor futuro
 ValorFuturo=VF(A,r,t)
 # Imprimimos el resultado: 
