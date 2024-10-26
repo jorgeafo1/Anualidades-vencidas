@@ -50,7 +50,7 @@ VF=20000
 r=0.01
 t=60
 # Calculamos la anualidad
-Anualidad=A(VF, r, t) 
+Anualidad=A_VF(VF, r, t) 
 # Imprimimos el resultado: 
 Anualidad
 ```
