@@ -30,7 +30,7 @@ r=1/240
 t=84
 # Calculamos el valor futuro
 ValorFuturo=VF(A,r,t)
-# Imprimimmos el resultado: 
+# Imprimimos el resultado: 
 ValorFuturo
 ```
 
@@ -51,7 +51,7 @@ r=0.01
 t=60
 # Calculamos la anualidad
 Anualidad=A(VF, r, t) 
-# Imprimimmos el resultado: 
+# Imprimimos el resultado: 
 Anualidad
 ```
 
@@ -72,7 +72,7 @@ A=244.89
 r=0.01
 # Calculamos el numero de pagos
 NumeroDePagos=t(VF,A,r)
-# Imprimimmos el resultado: 
+# Imprimimos el resultado: 
 NumeroDePagos
 ```
 
@@ -94,7 +94,7 @@ A=244.89
 t=60
 # Calculamos la tasa del periodo
 tasa=r(VF,A,t)
-# Imprimimmos el resultado: 
+# Imprimimos el resultado: 
 tasa
 ```
 
@@ -116,7 +116,7 @@ r=0.01
 t=60
 # Calculamos la tasa del periodo
 ValorActual=VA(A,r,t)
-# Imprimimmos el resultado: 
+# Imprimimos el resultado: 
 ValorActual
 ```
 
@@ -137,7 +137,7 @@ r=0.01
 t=60
 # Calculamos la anualidad
 anualidad=A(VA,r,t)
-# Imprimimmos el resultado: 
+# Imprimimos el resultado: 
 anualidad
 ```
 
@@ -158,7 +158,7 @@ A=100
 r=0.01
 # Calculamos el número de pagos
 numeroDePagos=t(VA,A,r)
-# Imprimimmos el resultado: 
+# Imprimimos el resultado: 
 numeroDePagos
 ```
 
@@ -179,6 +179,6 @@ A=100
 t=36
 # Calculamos el número de pagos
 tasa=r(VA,A,t)
-# Imprimimmos el resultado: 
+# Imprimimos el resultado: 
 tasa
 ```
