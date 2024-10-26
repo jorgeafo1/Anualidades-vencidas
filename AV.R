@@ -21,10 +21,23 @@ t_VF=function(VF, A, r) {
 }
 
 # Fórmula para calcular la tasa del periodo (r), conociendo valor futuro
-r_VF=function(VF, A, t) {
-  exit= uniroot(function(r) A * (((1 + r)^t - 1) / r) - VF, lower = 0, upper = 1)$root
+r_VF = function(VF, A, t) {
+  if (VF <= 0 || A <= 0 || t <= 0) {
+    stop("VF, A y t deben ser mayores que cero.")
+  }
+
+  # Usar un límite inferior pequeño y un límite superior más grande
+  exit = uniroot(function(r) {
+    if (r == 0) {
+      return(t * A - VF)  # En el caso de r = 0, calcula la suma total de anualidades
+    } else {
+      return(A * (((1 + r)^t - 1) / r) - VF)  # Fórmula para calcular VF
+    }
+  }, lower = 0.0001, upper = 1)$root
+  
   return(exit)
 }
+
 
 # Fórmula para calcular el valor actual (VA)
 VA=function(A, r, t){
