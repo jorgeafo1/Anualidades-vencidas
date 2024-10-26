@@ -26,12 +26,11 @@ r_VF = function(VF, A, t) {
     stop("VF, A y t deben ser mayores que cero.")
   }
 
-
   exit = uniroot(function(r) {
     if (r == 0) {
-      return(t * A - VF)  # En el caso de r = 0, calcula la suma total de anualidades
+      return(t * A - VF)  
     } else {
-      return(A * (((1 + r)^t - 1) / r) - VF)  # Fórmula para calcular VF
+      return(A * (((1 + r)^t - 1) / r) - VF)  
     }
   }, lower = 0.0001, upper = 1)$root
   
