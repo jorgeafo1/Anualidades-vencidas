@@ -92,7 +92,7 @@ Se realizan los calculos:
 VF=20000
 A=244.89
 t=60
-# Calculamos la tasa del periodo
+# Calculamos la tasa
 tasa=r_VF(VF,A,t)
 # Imprimimos el resultado: 
 tasa
@@ -114,7 +114,7 @@ Se realizan los calculos:
 A=244.89
 r=0.01
 t=60
-# Calculamos la tasa del periodo
+# Calculamos el valor actual
 ValorActual=VA(A,r,t)
 # Imprimimos el resultado: 
 ValorActual
@@ -177,7 +177,7 @@ Se realizan los calculos:
 VA=10000
 A=300
 t=36
-# Calculamos el número de pagos
+# Calculamos la tasa
 tasa=r_VA(VA,A,t)
 # Imprimimos el resultado: 
 tasa
